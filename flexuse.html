@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Use</title>
+    <script src="https://kit.fontawesome.com/fb90977bb3.js" crossorigin="anonymous"></script>
     <style>
         .login-container {
             display: flex;
@@ -23,17 +24,46 @@
             margin-top: 15px;
             border: 1px solid lightgray;
             padding-left: 10px;
+            border-radius: 5px;
         }
 
         .login-form button {
             background-color: orange;
             color: whitesmoke;
             font-weight: 700;
+            border: 0;
+            padding: 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            margin-right: 15px;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About Us</a>
+            </span>
+            <span>
+                <a href=""><i class="fas fa-user"></i></a>
+                <a href=""><i class="fas fa-sign-out-alt"></i></i></a>
+            </span>
+        </nav>
+    </header>
     <section class="login-container">
         <form action="" class="login-form">
             <h2>Login</h2>
